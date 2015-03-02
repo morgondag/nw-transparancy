@@ -1,0 +1,17 @@
+{
+  "name": "test", // name of your app
+  "main": "index.html", // the html file to target
+    "window": {
+    	"title": "Window Test", // the page title
+        "toolbar": false, // disable toolbar
+        "position": "center", // the default app window position
+        "width": 400, // the window width
+        "height": 400, // the window height
+        "resizable": false, // resizable need to be turned of for transparancy
+        "frame": false, // if the window should have default os frame
+        "always-on-top":true, // set the application to top
+        "transparent":true // transparent window
+    },
+    // this makes all the transparant pixels in the 400x400 area to be click-though
+    "chromium-args": "--disable-gpu --force-cpu-draw"
+}
